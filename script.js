@@ -1,6 +1,6 @@
 const img1El = document.querySelector(`.img1`);
 const img2El = document.querySelector(`.img2`);
-// const h1El = document.querySelector(`h1`);
+const h1El = document.querySelector(`h1`);
 
 // random number selection
 const randomNumber1 = Math.trunc(Math.random() * 6) + 1;
@@ -25,11 +25,11 @@ role2();
 // changing h1 text according to winner/draw
 const winner = function () {
     if (randomNumber1 > randomNumber2) {
-        document.querySelector(`h1`).innerHTML = `Player 1 wins🏆`;
+        h1El.innerHTML = `Player 1 wins🏆`;
     } else if (randomNumber1 < randomNumber2) {
-        document.querySelector(`h1`).innerHTML = `Player 2 wins🏆`;
+        h1El.innerHTML = `Player 2 wins🏆`;
     } else {
-        document.querySelector(`h1`).innerHTML = `Draw🫥`;
+        h1El.innerHTML = `Draw🫥`;
     }
 };
 winner();
